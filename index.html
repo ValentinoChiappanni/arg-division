@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>División con tabla desplazable</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./estilos.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      
+      <img src="./asset/logo.png" class="logo">
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Divisiones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#table1">Primera</a></li>
+              <li><a class="dropdown-item" href="#table2">B Nacional</a></li>
+              <li><a class="dropdown-item" href="#table3">B Metropolitana</a></li>
+              <li><a class="dropdown-item" href="#table4">Federal A</a></li>
+              <li><a class="dropdown-item" href="#table5">Primera C</a></li>
+              <li><a class="dropdown-item" href="#table6">Primera D</a></li>
+            </ul>
+          </li>
+         
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container">
+    <h1>División futbol Argentino</h1>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" onclick="toggleTable('table1')">
+          <div class="card-body">
+            <h5 class="card-title">Primera</h5>
+            <p class="card-text">Haz clic para mostrar/ocultar la tabla</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card" onclick="toggleTable('table2')">
+          <div class="card-body">
+            <h5 class="card-title">B nacional</h5>
+            <p class="card-text">Haz clic para mostrar/ocultar la tabla</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card" onclick="toggleTable('table3')">
+          <div class="card-body">
+            <h5 class="card-title">B Metropolitana</h5>
+            <p class="card-text">Haz clic para mostrar/ocultar la tabla</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" onclick="toggleTable('table4')">
+          <div class="card-body">
+            <h5 class="card-title">Federal A</h5>
+            <p class="card-text">Haz clic para mostrar/ocultar la tabla</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" onclick="toggleTable('table5')">
+          <div class="card-body">
+            <h5 class="card-title">Primera C</h5>
+            <p class="card-text">Haz clic para mostrar/ocultar la tabla</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" onclick="toggleTable('table6')">
+          <div class="card-body">
+            <h5 class="card-title">Primera D</h5>
+            <p class="card-text">Haz clic para mostrar/ocultar la tabla</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <table id="table1" class="table table-bordered" >
+          <h2 class="text-center">Primera</h2>
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>PJ</th>
+              <th>G</th>
+              <th>E</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>River Plate</td>
+              <td>21</td>
+              <td>16</td>
+              <td>2</td>
+              <td>3</td>
+              <td>39</td>
+              <td>13</td>
+              <td>+26</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Talleres de Cordoba</td>
+              <td>21</td>
+              <td>12</td>
+              <td>4</td>
+              <td>5</td>
+              <td>36</td>
+              <td>19</td>
+              <td>+17</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>San Lorenzo</td>
+              <td>21</td>
+              <td>10</td>
+              <td>8</td>
+              <td>3</td>
+              <td>20</td>
+              <td>8</td>
+              <td>+12</td>
+              <td>38</td>
+            </tr>
+
+            <tr>
+              <td>Lanús</td>
+              <td>21</td>
+              <td>10</td>
+              <td>7</td>
+              <td>4</td>
+              <td>30</td>
+              <td>20</td>
+              <td>+10</td>
+              <td>37</td>
+            </tr>
+            
+
+          
+          </tbody>
+        </table>
+
+        <table id="table2" class="table table-bordered" >
+          <h2 class="text-center">B Nacional</h2>
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>PJ</th>
+              <th>G</th>
+              <th>E</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Agropecuario</td>
+              <td>21</td>
+              <td>12</td>
+              <td>2</td>
+              <td>7</td>
+              <td>31</td>
+              <td>23</td>
+              <td>8</td>
+              <td>38</td>
+            </tr>
+
+            <tr>
+              <td>San Martin de Tucuman</td>
+              <td>21</td>
+              <td>10</td>
+              <td>4</td>
+              <td>7</td>
+              <td>23</td>
+              <td>14</td>
+              <td>9</td>
+              <td>34</td>
+            </tr>
+
+            <tr>
+              <td>Defensores Unidos</td>
+              <td>21</td>
+              <td>9</td>
+              <td>7</td>
+              <td>5</td>
+              <td>19</td>
+              <td>13</td>
+              <td>6</td>
+              <td>34</td>
+            </tr>
+
+            <tr>
+              <td>San Martin</td>
+              <td>21</td>
+              <td>9</td>
+              <td>7</td>
+              <td>5</td>
+              <td>24</td>
+              <td>19</td>
+              <td>5</td>
+              <td>34</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="table3" class="table table-bordered" >
+          <h2 class="text-center">B Metropolitana</h2>
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>PJ</th>
+              <th>G</th>
+              <th>E</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Talleres Remedios</td>
+              <td>3</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>4</td>
+              <td>1</td>
+              <td>3</td>
+              <td>9</td>
+            </tr>
+
+            <tr>
+              <td>Fenix</td>
+              <td>3</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+              <td>4</td>
+              <td>1</td>
+              <td>3</td>
+              <td>7</td>
+            </tr>
+
+            <tr>
+              <td>UAI Urquiza</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>6</td>
+            </tr>
+
+            <tr>
+              <td>Villa San Carlos</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="table4" class="table table-bordered" >
+          <thead>
+            <h2 class="text-center">Federal A</h2>
+            <tr>
+              <th>Club</th>
+              <th>PJ</th>
+              <th>G</th>
+              <th>E</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Olimpo</td>
+              <td>16</td>
+              <td>9</td>
+              <td>5</td>
+              <td>2</td>
+              <td>26</td>
+              <td>11</td>
+              <td>15</td>
+              <td>32</td>
+            </tr>
+
+            <tr>
+              <td>Villa Mitre</td>
+              <td>16</td>
+              <td>8</td>
+              <td>6</td>
+              <td>2</td>
+              <td>17</td>
+              <td>5</td>
+              <td>12</td>
+              <td>30</td>
+            </tr>
+
+            <tr>
+              <td>Sansinena</td>
+              <td>16</td>
+              <td>7</td>
+              <td>3</td>
+              <td>6</td>
+              <td>18</td>
+              <td>15</td>
+              <td>3</td>
+              <td>24</td>
+            </tr>
+
+            <tr>
+              <td>R. Santamarina</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table id="table5" class="table table-bordered" >
+          <h2 class="text-center">Primera C</h2>
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>PJ</th>
+              <th>G</th>
+              <th>E</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>San Martín de Burzaco</td>
+              <td>22</td>
+              <td>13</td>
+              <td>5</td>
+              <td>4</td>
+              <td>34</td>
+              <td>20</td>
+              <td>14</td>
+              <td>44</td>
+            </tr>
+
+            <tr>
+              <td>Liniers</td>
+              <td>22</td>
+              <td>12</td>
+              <td>4</td>
+              <td>6</td>
+              <td>28</td>
+              <td>20</td>
+              <td>8</td>
+              <td>40</td>
+            </tr>
+
+            <tr>
+              <td>Claypole</td>
+              <td>22</td>
+              <td>11</td>
+              <td>6</td>
+              <td>5</td>
+              <td>27</td>
+              <td>13</td>
+              <td>14</td>
+              <td>39</td>
+            </tr>
+
+            <tr>
+              <td>Midland</td>
+              <td>21</td>
+              <td>11</td>
+              <td>5</td>
+              <td>5</td>
+              <td>32</td>
+              <td>24</td>
+              <td>8</td>
+              <td>38</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <table id="table6" class="table table-bordered" >
+          <h2 class="text-center">Primera D</h2>
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>PJ</th>
+              <th>G</th>
+              <th>E</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GC</th>
+              <th>DG</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sportivo Barracas</td>
+              <td>4</td>
+              <td>2</td>
+              <td>2</td>
+              <td>0</td>
+              <td>3</td>
+              <td>0</td>
+              <td>3</td>
+              <td>8</td>
+            </tr>
+
+            <tr>
+              <td>Centro Español</td>
+              <td>4</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>7</td>
+              <td>4</td>
+              <td>3</td>
+              <td>7</td>
+            </tr>
+
+            <tr>
+              <td>Argentino de Rosario</td>
+              <td>4</td>
+              <td>1</td>
+              <td>3</td>
+              <td>0</td>
+              <td>5</td>
+              <td>3</td>
+              <td>2</td>
+              <td>6</td>
+            </tr>
+
+            <tr>
+              <td>Defensores de Cambaceres</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+              <td>3</td>
+              <td>1</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      function toggleTable(tableId) {
+        var table = document.getElementById(tableId);
+        if (table.style.display === "none") {
+          table.style.display = "table";
+        } else {
+          table.style.display = "none";
+        }
+      }
+      
+    </script>
+  </div>
+</body>
+
+</html>
